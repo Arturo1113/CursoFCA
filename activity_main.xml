@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context="ejemplo.ejemplo.MainActivity">
+
+    <!--Comentario en una linea-->
+
+    <!--Se agregraron algunos atributos a la parte del TextView-->
+    <!--En el texto ponemos referenia al archivo string
+    que se encentra dentro de la carpeta res/values/strings.xml-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#0097A7"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Titulo"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="90dp"
+        android:layout_weight="3"
+        android:src="@drawable/cascada" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Escribe aquí"
+        android:textColorHint="#000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="150dp"
+        android:background="#396"
+        android:text="Guardar" />
+
+
+</LinearLayout>
